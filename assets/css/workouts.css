@@ -1,53 +1,37 @@
-/* Estilo para os dias da semana */
-h1.day-title {
-    font-size: 2rem;
+
+
+.hover-container {
+    z-index: 10;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.hover-item {
+    font-size: 2.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 20px;
-    color: #000;
-}
-
-/* Estilo das aulas */
-.class-container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-.class-time {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.class-details {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-/* Botão Agendar Aula */
-.schedule-button {
-    font-size: 1rem;
-    padding: 10px 20px;
-    border: 2px solid #000;
-    background: none;
-    border-radius: 50px;
-    text-transform: uppercase;
-    font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
-    align-self: flex-start;
+    margin: 10px 0;
+    color: #000;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
-.schedule-button:hover {
-    background-color: #000;
+.hover-item:hover {
     color: #fff;
 }
 
-/* Divider */
-.divider {
-    height: 2px;
-    background-color: #e6e6e6;
-    margin: 20px 0;
+.background-image {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
