@@ -44,7 +44,7 @@ body {
   height: 100%;
 }
 
-.carousel-caption {
+.carousel-inner .carousel-caption {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -71,8 +71,8 @@ img {
 /* Responsiveness */
 @media (min-width: 1200px) {
   .carousel-caption {
-    top: 40%; /* Adjust for larger screens */
-    transform: translate(-50%, -40%);
+    top: 50%; /* Adjust for larger screens */
+    transform: translate(-50%, -50%);
   }
 }
 
