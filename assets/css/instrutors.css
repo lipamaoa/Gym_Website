@@ -1,0 +1,110 @@
+.instrutores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.instrutor {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.instrutor:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  background-color: #f1f1f1;
+}
+
+.instrutor h3 {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.instrutor h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: rgb(52, 56, 56);
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+.instrutor:hover h3 {
+  color: rgb(154, 163, 163);
+}
+
+.instrutor p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 10px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.instrutor:hover p {
+  color: #333;
+}
+
+.instrutor img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.instrutor:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .instrutores {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .instrutor img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .instrutores {
+    grid-template-columns: 1fr;
+  }
+
+  .instrutor {
+    padding: 20px;
+  }
+
+  .instrutor img {
+    max-height: 250px;
+  }
+
+  .instrutor h3 {
+    font-size: 1.5rem;
+  }
+
+  .instrutor h1 {
+    font-size: 1.1rem;
+  }
+
+  .instrutor p {
+    font-size: 0.95rem;
+  }
+}

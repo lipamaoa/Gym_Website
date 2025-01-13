@@ -1,37 +1,56 @@
-
-
+/* Hover Container */
 .hover-container {
-    z-index: 10;
-    text-align: center;
-    margin-top: 7%;
-    margin-bottom: 7%;
-}
-
-.hover-item {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin: 10px 0;
-    color: #000;
+    padding: 100px;
     position: relative;
-    transition: color 0.3s ease;
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
 }
 
-.hover-item:hover {
-    color: #fff;
-}
-
+/* Background Image */
 .background-image {
     position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 50%;
-    height: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    opacity: 0; 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    filter: grayscale()
+}
+
+/* Words Container */
+.hover-words {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    position: relative;
+    z-index: 2; 
+}
+
+/* Individual Word */
+.hover-item {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #000; 
+    transition: color 0.3s ease;
+}
+
+/* Hover Effects */
+.hover-item:hover {
+    color: #c71f1f; 
+}
+
+/* Background Image Hover Effect */
+.hover-item:hover ~ .background-image {
+    opacity: 1; 
+    transform: scale(1.05); 
 }

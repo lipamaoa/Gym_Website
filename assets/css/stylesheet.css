@@ -4,6 +4,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.nav-link{
+  color:#f8f9fa;
+}
 .hero {
   background: url("https://via.placeholder.com/1920x600") no-repeat center
     center/cover;
@@ -23,11 +27,14 @@ body {
 .section.bg-light {
   background-color: #f8f9fa;
 }
-.footer {
-  background: #222;
-  color: #ddd;
-  padding: 20px 0;
-  text-align: center;
+
+.social-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+  color: #b0afad !important;
+  transform: scale(1.2);
 }
 
 /* Base Styles */
@@ -68,7 +75,19 @@ img {
   height: auto;
 }
 
-/* Responsiveness */
+.custom-container {
+  max-width: 60%;
+}
+.plan-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px); /* Slight lift effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Media Queries */
 @media (min-width: 1200px) {
   .carousel-caption {
     top: 50%; /* Adjust for larger screens */
@@ -88,7 +107,7 @@ img {
   }
 
   .gym-features-p {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
 
   .card-title {
