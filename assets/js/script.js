@@ -14,17 +14,18 @@ fetch("../components/footer.html")
 
   //To show images when hovering in classes
 
-const items = document.querySelectorAll(".hover-item");
+  const items = document.querySelectorAll(".hover-item");
 const background = document.querySelector(".background-image");
 
 items.forEach((item) => {
   item.addEventListener("mouseenter", () => {
     const imageUrl = item.getAttribute("data-image");
     background.style.backgroundImage = `url(${imageUrl})`;
-    background.style.opacity = 1;
+    background.style.opacity = 1; // Show the image
   });
 
   item.addEventListener("mouseleave", () => {
-    background.style.opacity = 0;
+    background.style.opacity = 0; // Hide the image
   });
 });
+
