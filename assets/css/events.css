@@ -11,6 +11,12 @@ h1.day-title {
     color: #000;
 }
 
+h2{
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 40px;
+}
+
 /* Estilo das aulas */
 .class-container {
     display: flex;
@@ -55,4 +61,30 @@ h1.day-title {
     height: 2px;
     background-color: #e6e6e6;
     margin: 20px 0;
+}
+
+img {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    position: relative; 
+    filter: grayscale(1) contrast(1) brightness(1);
+}
+
+/* Estilo para o texto de overlay */
+.overlay-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    opacity: 1;
+    visibility: visible;
+    text-align: center; 
 }
