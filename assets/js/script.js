@@ -11,10 +11,9 @@ fetch("../components/footer.html")
     document.getElementById("footer").innerHTML = data;
   });
 
+//To show images when hovering in classes
 
-  //To show images when hovering in classes
-
-  const items = document.querySelectorAll(".hover-item");
+const items = document.querySelectorAll(".hover-item");
 const background = document.querySelector(".background-image");
 
 items.forEach((item) => {
@@ -29,3 +28,10 @@ items.forEach((item) => {
   });
 });
 
+function showSuccessToast() {
+  const toastElement = document.getElementById("successToast");
+  toastElement.querySelector('.toast-body').textContent=message;
+  const toast=new bootstrap.Toast(toastElement);
+  
+  toast.show();
+}
