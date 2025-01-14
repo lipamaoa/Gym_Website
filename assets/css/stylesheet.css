@@ -5,8 +5,8 @@ body {
   box-sizing: border-box;
 }
 
-.nav-link{
-  color:#f8f9fa;
+.nav-link {
+  color: #f8f9fa;
 }
 .hero {
   background: url("https://via.placeholder.com/1920x600") no-repeat center
@@ -35,6 +35,11 @@ body {
 .social-link:hover {
   color: #b0afad !important;
   transform: scale(1.2);
+}
+
+::placeholder {
+  font-size: 0.875rem;
+  color: #888;
 }
 
 /* Base Styles */
@@ -85,6 +90,60 @@ img {
 .plan-card:hover {
   transform: translateY(-10px); /* Slight lift effect */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Modal Header Style */
+.modal-header {
+  background-color: #333; /* Cor de fundo do cabeçalho */
+  color: #fff; /* Cor do texto */
+  border-bottom: 2px solid #555; /* Linha inferior */
+}
+
+/* Botão Close no Modal */
+.modal-header .btn-close {
+  background-color: transparent;
+  color: #000000;
+  opacity: 0.8;
+}
+
+.modal-header .btn-close:hover {
+  opacity: 1;
+}
+
+/* Botão Principal */
+.modal-body .btn {
+  background-color: #ffffff; /* Fundo dos botões */
+  color: #000000;
+  border-radius: none;
+  width: 30%;
+}
+
+.modal-body .btn:hover {
+  background-color: #000000; /* Fundo ao passar o mouse */
+  color: #fff;
+}
+
+/* Campos do Formulário */
+.modal-body .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-body .form-label {
+  color: #333;
+}
+
+/* Títulos */
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Botão Close */
+.btn-close {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
 }
 
 /* Media Queries */
