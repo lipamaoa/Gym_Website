@@ -1,17 +1,18 @@
-#form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(128, 128, 128, 0.068);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    width: 800px;;
-  }
+.register-form {
+  background-color: rgba(128, 128, 128, 0.068);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 800px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 30%;
+}
 
-  @media (max-width: 576px) {
-    #form{
-      max-width: 90%; /* Reduz a largura máxima para telas menores */
-      padding: 15px; /* Diminui o padding para telas menores */
-    }
+@media (max-width: 576px) {
+  .register-form {
+    max-width: 90%; /* Reduz a largura máxima para telas menores */
+    padding: 15px; /* Diminui o padding para telas menores */
+    margin-left: 5%;
+  }
 }
