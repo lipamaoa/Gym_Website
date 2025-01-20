@@ -47,8 +47,12 @@
                 >Meet the Team</a
               >
             </li>
-            <li><a class="dropdown-item" href="">Gallery</a></li>
-            <li><a class="dropdown-item" href="">Events</a></li>
+            <li>
+              <a class="dropdown-item" href="../pages/gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="../pages/events.html">Events</a>
+            </li>
           </ul>
         </li>
         <li class="nav-item">
@@ -137,7 +141,7 @@
             <button
               type="submit"
               class="btn btn-md btn-dark px-4"
-              onclick="showSuccessToast('Login!')"
+              onclick="showSuccessToast('Login successful. Welcome back!')"
             >
               Log in
             </button>
@@ -272,7 +276,7 @@
               <button
                 type="submit"
                 class="btn btn-dark btn-md mt-3"
-                onclick="showSuccessToast()"
+                onclick="showSuccessToast('Successfully registered!!')"
               >
                 Sign up
               </button>
@@ -284,7 +288,7 @@
   </div>
 </div>
 
-<!-- Toast de Sucesso -->
+<!-- Modal Body -->
 <div
   class="position-fixed top-0 start-50 translate-middle-x p-3"
   style="z-index: 1055"
@@ -297,7 +301,7 @@
     aria-atomic="true"
   >
     <div class="d-flex">
-      <div class="toast-body">Action completed successfully!</div>
+      <div class="toast-body"></div>
       <button
         type="button"
         class="btn-close btn-close-white me-2 m-auto"
