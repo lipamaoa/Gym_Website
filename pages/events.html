@@ -1,202 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
-    <link rel="icon" href="../assets/images/icons/favicon.ico" type="image/x-icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../assets/css/events.css" />
-    <link rel="stylesheet" href="../assets/css/stylesheet.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym XYZ - Events</title>
+  <link rel="icon" href="../assets/images/icons/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/events.css" />
+ 
 </head>
+
 <body>
-    <!-- Navbar -->
-    <div class="col-12 p-0">
-        <div id="navbar"></div>
-        </div>
+  <!-- Navbar -->
+  <div class="col-12 p-0">
+    <div id="navbar"></div>
+  </div>
 
-        <!--Events-->
-        <div class="col-12 py-5 bg-light">
-            <div class="container mt-4" id="schedules">
-              <!-- Heading -->
-              <h2 class="text-center mb-4 fs-2 fw-bold text-uppercase">
-                Our Events
-              </h2>
-              <p class="text-center mb-5 fs-5 text-muted">
-                Join us
-              </p>
-               
-                    <!-- Event 1 -->
-                    <div class="row align-items-center">
-                        <div class="col-sm-6 text-center" style="position: relative; display: inline-block;">
-                            <img src="/assets/images/events/events_reiki.jpg" alt="Reiki">
-                            <div class="overlay-img">
-                                <!-- <h3>ZEN DAY - Reiki Group</h3> -->
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="class-container" >
-                                <h3 class="text-uppercase">ZEN DAY - Reiki Group</h3>
-                                <p class="class-time">18/01/2025 | 17-18h</p>
-                                <p class="class-details">Our first event with Reiki, join and relax with us</p>
-                            </div>
-                            <div class="class-container">
-                                <p class="class-time">Supervisors:</p>
-                                <p class="class-details">Rita Feliz</p>
-                            </div>
-                            <button class="schedule-button">Go to event</button>
-                            <div class="divider"></div>
-                        </div>
-                    </div>
-                
-                    <!-- Event 2-->
-                    <div class="row align-items-center">
-                        <div class="col-sm-6 text-center" style="position: relative; display: inline-block;">
-                            <img src="/assets/images/events/events_running race.jpg" alt="RunningRace">
-                            <div class="overlay-img">
-                                <!-- <h3>I POWER GYM Running Race</h3> -->
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="class-container">
-                                <h3>I POWER GYM Running Race</h3>
-                                <p class="class-time">30/01/2025 | 16-18h</p>
-                                <p class="class-details">A fun race to enjoy with your family and friends</p>
-                            </div>
-                            <div class="class-container">
-                                <p class="class-time">Supervisors:</p>
-                                <p class="class-details">João Guerra</p>
-                            </div>
-                            <button class="schedule-button">Go to event</button>
-                            <div class="divider"></div>
-                        </div>
-                    </div>
-                
-                    <!-- Event 3 -->
-                    <div class="row align-items-center">
-                        <div class="col-sm-6 text-center" style="position: relative; display: inline-block;">
-                            <img src="/assets/images/events/events_hip hop.jpg"  alt="HipHop">
-                            <div class="overlay-img">
-                              
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="class-container">
-                                <h3>Hip Hop Fit Workout</h3>
-                                <p class="class-time">21/02/2025 | 18-19h</p>
-                                <p class="class-details">Join with us and feel the music | For all Ages</p>
-                            </div>
-                            <div class="class-container">
-                                <p class="class-time">Supervisors:</p>
-                                <p class="class-details">Filomena Paz</p>
-                            </div>
-                            <button class="schedule-button">Go to event</button>
-                            <div class="divider"></div>
-                        </div>
-                    </div>
-                
-                    <!-- Event 4 -->
-                    <div class="row align-items-center">
-                        <div class="col-sm-6 text-center" style="position: relative; display: inline-block;">
-                            <img src="/assets/images/events/events_cardio.jpg"  alt="Cardio">
-                            <div class="overlay-img">
-                                
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="class-container">
-                                <h3>Full Body Cardio Workout</h3>
-                                <p class="class-time">Every Thursday | 18-19h</p>
-                                <p class="class-details">Let's work on our body, feel the growth</p>
-                            </div>
-                            <div class="class-container">
-                                <p class="class-time">Coaches:</p>
-                                <p class="class-details">Coaches: Roberto Sanchez & Joao Guerra</p>
-                            </div>
-                            <button class="schedule-button">Go to event</button>
-                            <div class="divider"></div>
-                        </div>
-                    </div>
-                
-                    <!-- Event 5 -->
-                    <div class="row align-items-center">
-                        <div class="col-sm-6 text-center" style="position: relative; display: inline-block;">
-                            <img src="/assets/images/events/events_kidsobstacle.jpg"  alt="KidsObstacle">
-                            <div class="overlay-img">
-                                
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="class-container">
-                                <h3>Kid's Obstacle Challenge</h3>
-                                <p class="class-time">14/03/2025 | 15-17h</p>
-                                <p class="class-details">A fun and challenging obstacle course for kids.</p>
-                            </div>
-                            <div class="class-container">
-                                <p class="class-time">Supervisors:</p>
-                                <p class="class-details">Rita Feliz & Joao Guerra</p>
-                            </div>
-                            <button class="schedule-button">Go to event</button>
-                            <div class="divider"></div>
-                        </div>
-                    </div>
-                
-                    <!-- Event 6 -->
-                    <div class="row align-items-center">
-                        <div class="col-sm-6 text-center" style="position: relative; display: inline-block;">
-                            <img src="/assets/images/events/events_dance.jpg" alt="DanceParty">
-                            <div class="overlay-img">
-                                
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="class-container">
-                                <h3>Dance Party For Parents and Kids</h3>
-                                <p class="class-time">19/03/2025</p>
-                                <p class="class-details">Bring your family and let's dance together.</p>
-                            </div>
-                            <div class="class-container">
-                                <p class="class-time">Supervisors:</p>
-                                <p class="class-details">Rita Feliz & Roberto Sanchez</p>
-                            </div>
-                            <button class="schedule-button">Go to event</button>
-                            <div class="divider"></div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
+  <!-- Events Section -->
+  <div class="container custom-padding">
+    <h2 class="section-title">Our Events</h2>
+    <p class="section-subtitle">Join us in our exciting events and make fitness fun!</p>
 
+    <!-- Event 1 -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="../assets/images/events/events_reiki.jpg" alt="Reiki" class="event-img">
+      </div>
+      <div class="col-md-6">
+        <h3 class="event-title">Zen Day - Reiki Group</h3>
+        <p class="event-details"><strong>Date:</strong> 18/01/2025 | <strong>Time:</strong> 17-18h</p>
+        <p class="event-details">Our first event with Reiki. Join and relax with us.</p>
+        <p class="event-details"><strong>Supervisors:</strong> Rita Feliz</p>
+        <button class="schedule-button" onclick="showSuccessToast('This event has been added to your calendar.')">Go to event</button>
+      </div>
     </div>
-   
-    <br>
-    <br>
 
-     <!-- Footer -->
-     <div class="col-12 p-0">
-        <div id="footer"></div>
-        </div>
+    <!-- Divider -->
+    <div class="divider"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <!-- Event 2 -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="../assets/images/events/events_running race.jpg" alt="Running Race" class="event-img">
+      </div>
+      <div class="col-md-6">
+        <h3 class="event-title">I Power Gym Running Race</h3>
+        <p class="event-details"><strong>Date:</strong> 30/01/2025 | <strong>Time:</strong> 16-18h</p>
+        <p class="event-details">A fun race to enjoy with your family and friends.</p>
+        <p class="event-details"><strong>Supervisor:</strong> João Guerra</p>
+        <button class="schedule-button" onclick="showSuccessToast('This event has been added to your calendar.')">Go to event</button>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Event 3 -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="../assets/images/events/events_hip hop.jpg" alt="Hip Hop" class="event-img">
+      </div>
+      <div class="col-md-6">
+        <h3 class="event-title">Hip Hop Fit Workout</h3>
+        <p class="event-details"><strong>Date:</strong> 21/02/2025 | <strong>Time:</strong> 18-19h</p>
+        <p class="event-details">Join us and feel the music. Open for all ages.</p>
+        <p class="event-details"><strong>Supervisor:</strong> Filomena Paz</p>
+        <button class="schedule-button" onclick="showSuccessToast('This event has been added to your calendar.')">Go to event</button>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Event 4 -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="../assets/images/events/events_cardio.jpg" alt="Cardio Workout" class="event-img">
+      </div>
+      <div class="col-md-6">
+        <h3 class="event-title">Full Body Cardio Workout</h3>
+        <p class="event-details"><strong>Date:</strong> Every Thursday | <strong>Time:</strong> 18-19h</p>
+        <p class="event-details">Let’s work on our body and feel the growth.</p>
+        <p class="event-details"><strong>Coaches:</strong> Roberto Sanchez & João Guerra</p>
+        <button class="schedule-button" onclick="showSuccessToast('This event has been added to your calendar.')">Go to event</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="col-12 p-0">
+    <div id="footer"></div>
+  </div>
+
+  <script src="../assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-    
-</body>
+
 </html>

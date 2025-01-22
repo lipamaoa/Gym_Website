@@ -1,0 +1,254 @@
+body {
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://via.placeholder.com/1920x600") no-repeat center
+    center/cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+/* General Section Padding */
+.section {
+  padding: 60px 0;
+}
+
+.section.bg-light {
+  background-color: #f8f9fa;
+}
+
+.social-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+  color: #b0afad !important;
+  transform: scale(1.2);
+}
+
+::placeholder {
+  font-size: 0.875rem;
+  color: #888;
+}
+
+/* Carousel Base */
+.carousel {
+  max-width: 100%; /* Full width for flexibility */
+  margin: 30px auto; /* Center the carousel */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.carousel-inner {
+  height: auto; /* Allow height to adjust dynamically */
+  max-height: 600px; /* Limit maximum height */
+}
+
+.carousel-item img {
+  width: 100%; /* Use full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the entire image is visible */
+  object-position: center; /* Center the image */
+  transition: transform 0.3s ease;
+}
+
+/* Carousel Content */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%; /* Maintain a responsive caption width */
+  padding: 15px;
+  color: #ffffff;
+  z-index: 10; /* Ensure it stays on top of the image */
+}
+
+.carousel-caption h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.carousel-caption .btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.carousel-caption .btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+/* Ensure images scale properly */
+.feature-box img {
+  max-width: 70px;
+  height: auto;
+}
+
+/* Media Queries */
+
+/* Large Screens (≥1200px) */
+@media (min-width: 1200px) {
+  .carousel {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .carousel-inner {
+    max-height: 600px; /* Limit the height for consistency */
+  }
+
+  .carousel-caption {
+    top: 60%; /* Adjust caption position */
+    transform: translate(-50%, -50%);
+  }
+
+  .carousel-caption h1 {
+    font-size: 2.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.5rem;
+  }
+
+  .carousel-item img {
+    object-fit: contain; /* Show the entire image */
+    max-height: 600px; /* Prevent stretching beyond container */
+  }
+}
+
+/* Medium Screens (<1200px) */
+@media (max-width: 1200px) {
+  .carousel {
+    max-width: 95%; /* Use more width on smaller screens */
+  }
+
+  .carousel-inner {
+    max-height: 500px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small Screens (<768px) */
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 100%; /* Full width for smaller devices */
+  }
+
+  .carousel-inner {
+    max-height: 400px; /* Reduced height for better fit */
+  }
+
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+   /* Adjust heading and text for smaller screens */
+   .gym-features h2 {
+    font-size: 1.8rem;
+  }
+
+  .gym-features p {
+    font-size: 1rem;
+  }
+
+  /* Reduce image size on smaller devices */
+  .feature-box img {
+    max-width: 50px;
+  }
+
+  .feature-box h5 {
+    font-size: 1.2rem;
+  }
+
+  .feature-box p {
+    font-size: 0.9rem;
+  }
+
+  .btn-lg {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+}
+
+/* Extra Small Screens (<576px) */
+@media (max-width: 576px) {
+  .carousel {
+    max-width: 100%; /* Use full width for very small screens */
+  }
+
+  .carousel-inner {
+    max-height: 300px; /* Further reduce the height */
+  }
+
+  .carousel-caption {
+    top: 60%; /* Adjust caption position */
+    transform: translate(-50%, -60%);
+    font-size: 0.9rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  .feature-box img {
+    max-width: 40px;
+  }
+
+  .feature-box h5 {
+    font-size: 1rem;
+  }
+
+  .feature-box p {
+    font-size: 0.8rem;
+  }
+}

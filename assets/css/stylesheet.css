@@ -8,6 +8,13 @@ body {
 .nav-link {
   color: #f8f9fa;
 }
+
+.custom-padding {
+  margin-top: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+
 .hero {
   background: url("https://via.placeholder.com/1920x600") no-repeat center
     center/cover;
@@ -88,15 +95,15 @@ img {
 }
 
 .plan-card:hover {
-  transform: translateY(-10px); /* Slight lift effect */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Modal Header Style */
 .modal-header {
-  background-color: #333; /* Cor de fundo do cabeçalho */
-  color: #fff; /* Cor do texto */
-  border-bottom: 2px solid #555; /* Linha inferior */
+  background-color: #333;
+  color: #fff;
+  border-bottom: 2px solid #555;
 }
 
 /* Botão Close no Modal */
@@ -112,14 +119,14 @@ img {
 
 /* Botão Principal */
 .modal-body .btn {
-  background-color: #ffffff; /* Fundo dos botões */
+  background-color: #ffffff;
   color: #000000;
   border-radius: none;
   width: 30%;
 }
 
 .modal-body .btn:hover {
-  background-color: #000000; /* Fundo ao passar o mouse */
+  background-color: #000000;
   color: #fff;
 }
 
@@ -146,11 +153,70 @@ img {
   font-size: 1.2rem;
 }
 
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-img:hover {
+  transform: scale(1.1);
+}
+
+/* Fade-in Animation */
+.testimonial-item {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.testimonial-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.testimonial-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.testimonial-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.testimonial-item:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.testimonial-item:nth-child(5) {
+  animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Media Queries */
 @media (min-width: 1200px) {
   .carousel-caption {
-    top: 50%; /* Adjust for larger screens */
+    top: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 }
 

@@ -1,8 +1,12 @@
 .instrutores {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas grandes */
   gap: 20px;
   padding: 30px;
+}
+
+.custom-padding {
+  padding-top: 6rem;
 }
 
 .instrutor {
@@ -37,7 +41,6 @@
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-
   color: rgb(52, 56, 56);
   margin-top: 15px;
   transition: color 0.3s ease;
@@ -72,9 +75,11 @@
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
+/* Responsividade */
+@media (max-width: 992px) {
+  /* Tablets e telas médias */
   .instrutores {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
   }
 
   .instrutor img {
@@ -82,13 +87,15 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .instrutores {
     grid-template-columns: 1fr;
   }
 
   .instrutor {
-    padding: 20px;
+    padding: 30px;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .instrutor img {
@@ -96,14 +103,14 @@
   }
 
   .instrutor h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .instrutor h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .instrutor p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 }
