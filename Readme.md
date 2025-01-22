@@ -1,6 +1,6 @@
 # ⚡ POWER X GYM - Gym Website ⚡
 
-![Homepage](.assets/images/front_page.png)
+![Homepage](./assets/images/front_page.png)
 
 ## 📂Table of Contents:
 
