@@ -72,6 +72,10 @@ h1.day-title {
 }
 
 @media (max-width: 768px) {
+  .row.align-items-center {
+    text-align: center;
+  }
+
   .class-container {
     margin-bottom: 15px;
   }
@@ -81,9 +85,15 @@ h1.day-title {
   .class-details {
     font-size: 0.8rem;
   }
+  .customized-padding {
+    padding-top: 10%;
+  }
 }
 
 @media (max-width: 576px) {
+  .row.align-items-center {
+    text-align: center;
+  }
   h1.day-title {
     font-size: 1.5rem;
   }
@@ -93,5 +103,8 @@ h1.day-title {
   .schedule-button {
     font-size: 0.8rem;
     padding: 6px 12px;
+  }
+  .customized-padding {
+    padding-top: 15%;
   }
 }

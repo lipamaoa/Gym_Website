@@ -75,7 +75,7 @@ body {
 
 @media (max-width: 768px) {
   .row.align-items-center {
-    text-align: center; /* Centraliza o texto e os botões */
+    text-align: center; 
   }
   .event-title {
     font-size: 1.5rem;
@@ -122,12 +122,12 @@ body {
   }
 
   .event-img {
-    max-width: 80%; /* Reduz ainda mais o tamanho da imagem */
+    max-width: 80%; 
   }
 
   .schedule-button {
-    font-size: 0.8rem; /* Fonte menor para botões */
-    padding: 6px 12px; /* Reduz o preenchimento do botão */
+    font-size: 0.8rem; 
+    padding: 6px 12px; 
   }
 
   .section-title {

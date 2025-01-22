@@ -44,6 +44,19 @@ body {
   transform: scale(1.2);
 }
 
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-visit {
+  padding-left: 20%;
+}
+
+.row1 h1 {
+  font-size: 2.5rem;
+}
+
 ::placeholder {
   font-size: 0.875rem;
   color: #888;
@@ -193,6 +206,25 @@ img {
   animation-delay: 1s;
 }
 
+.img-features {
+  max-width: 70px;
+  height: auto;
+}
+
+.form-label {
+  font-size: 1.2rem;
+}
+
+.row g-3 {
+  padding: 1rem 6rem;
+}
+
+.form-control {
+  font-size: 0.9rem;
+  max-width: 100%;
+  
+}
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -244,6 +276,28 @@ img {
   .card-img-top {
     max-width: 40px;
   }
+
+  .form-control {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  .form-visit {
+    padding: 0%;
+  }
+
+  .form-right {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-control {
+    font-size: 0.7rem;
+    width: 150%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -264,5 +318,48 @@ img {
   }
   .card-img-top {
     max-width: 50px;
+  }
+
+  .img-features {
+    max-width: 60px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+  }
+
+  .form-control {
+    font-size: 0.8rem;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  ul {
+    font-size: 0.8rem;
+  }
+
+  .form-label {
+    font-size: 0.8rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+  .form-visit {
+    padding: 0%;
   }
 }
