@@ -1,8 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
+    color: #000000;
+  }
+  
+  .custom-padding {
+    padding: 6rem 0;
+  }
 
 .gallery-container {
     max-width: 1200px;
